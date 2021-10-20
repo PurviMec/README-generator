@@ -17,7 +17,7 @@ module.exports = templateData => {
           <div>
               <div>
                   <h1>${header.name}</h1>
-                  <p><h3>Discription</h3>
+                  <p><h2>Discription</h2>
                       ${header.description}
                   </p>
               </div>
@@ -26,40 +26,40 @@ module.exports = templateData => {
               </div>
           <div>
               <p>
-                  <h3>Table of Contents:</h3>
-                  <link href="" />Installation</br>
-                  <link href="" />Usage</br>
-                  <link href="" />Contributing</br>
-                  <link href="" />license</br>
+                  <h2>Table of Contents:</h2>
+                  <a> href="" />Installation</a></br>
+                  <a> href="" />Usage</a></br>
+                  <a> href="" />Contributing</a></br>
+                  <a> href="" />license</a></br>
               </p>
           </div>
       </header>
       <main>
           <div>
               <div>
-                  <p><h3>Installation</h3>
+                  <p><h2>Installation</h2>
                       ${header.installation}
                   </p>
               </div>
               <div>
-                  <p><h3>Usage</h3>
+                  <p><h2>Usage</h2>
                       ${header.usage}
                       <p>Select a target directory for your image:(using the relative filepath, add it to your README using the following syntax:</P>
                       <span>${header.path}</span>
                   </p>
               </div>
               <div>
-                  <p><h3>Contributing</h3>
+                  <p><h2>Contributing</h2>
                       ${header.contributing}
                   </p>
               </div>
               <div>
-                  <p><h3>license</h3>
+                  <p><h2>license</h2>
                       ${header.license}
                   </p>
               </div>
               <div>
-                  <p><h3>Tests</h3>
+                  <p><h2>Tests</h2>
                       ${header.tests}
                   </p>
               </div>
