@@ -59,26 +59,32 @@ const mainData = () => {
                 excludeFilter: nodePath => nodePath == '.',
                 itemType: 'any',
                 rootPath: 'app',
-                message: 'Select a target directory for your image:(using the relative filepath, add it to your README using the following syntax:)',
-                default: '![alt text](assets/images/screenshot.png)',
+                message: 'Select a target directory for your image:(add it to your README using the following syntax:![alt text](assets/images/screenshot.png))',
+                default: '',
                 suggestOnly: false,
                 depthLimit: 5
             },
             {
                 type: 'input',
                 name: 'contributing',
-                message: 'Add guidelines for cintribution:'
+                message: 'Add contributors:'
             },
             {
                 type: 'checkbox',
                 name: 'license',
                 message: 'What type of licence you have?',
-                choices: ['BSD', 'MIT', 'GPL']
+                choices: ["Apache",
+                          "Academic",
+                          "GNU",
+                          "ISC",
+                          "MIT",
+                          "Mozilla",
+                          "Open"]
             },
             {
                type: 'input',
                 name: 'tests',
-                message: 'Add your tests and examples how to run them:'
+                message: 'What commands are needed to test this app?'
             },
             {
                 type: 'input',
@@ -113,7 +119,7 @@ const mainData = () => {
 mainData()
 .then(READMEdata => {
     const pageHTML = generatePage(READMEdata); 
-    fs.writeFile('./index.html', pageHTML, err =>{
+    fs.writeFile('./dist/index.html', pageHTML, err =>{
     if(err) throw err;
     console.log('file created!');
    });
