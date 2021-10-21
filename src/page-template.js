@@ -50,6 +50,7 @@ module.exports = templateData => {
               <div>
                   <p><h2 class= 'm-1' style='border-bottom:1px solid gray;'>Usage</h2>
                       <p class = 'p-2'>${header.usage}
+                      Select a target directory for your image:(add it to your README using the following syntax:![alt text](src/images/screenshot.png))
                       <span class = 'p-2'>${header.path}</span></p>
                   </p>
               </div>
