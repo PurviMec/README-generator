@@ -49,9 +49,7 @@ module.exports = templateData => {
               </div>
               <div>
                   <p><h2 class= 'm-1' style='border-bottom:1px solid gray;'>Usage</h2>
-                      <p class = 'p-2'>${header.usage}
-                      Select a target directory for your image:(add it to your README using the following syntax:![alt text](src/images/screenshot.png))
-                      <span class = 'p-2'>${header.path}</span></p>
+                      <p class = 'p-2'>${header.usage}></p>
                   </p>
               </div>
               <div>
@@ -74,8 +72,9 @@ module.exports = templateData => {
           
       </main>
       <footer class=" m-5">
-              <p class = 'p-2'>GitHub UserName: <a href= '${header.gitHub}' alt= ''>${header.gitHub}</a></p>
-              <p class = 'p-2'>Email Address: <a href="mailto: ${header.email}" alt= ''>${header.email}</a></p>
+          <p class = 'p-2'>GitHub UserName: ${header.gitHub}</p>
+          <p class = 'p-2'>GitHub URL: <a href= '${header.gitHubURL}' alt= ''>${header.gitHubURL}</a></p>
+          <p class = 'p-2'>Email Address: <a href="mailto: ${header.email}" alt= ''>${header.email}</a></p>
       </footer>
   </body>
   </html>

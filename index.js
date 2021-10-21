@@ -52,18 +52,18 @@ const mainData = () => {
                 name: 'usage',
                 message: 'Provide instructions and examples for use'
             },
-            {
-                type: 'fuzzypath',
-                name: 'path',
-                excludePath: nodePath => nodePath.startsWith('node_modules'),
-                excludeFilter: nodePath => nodePath == '.',
-                itemType: 'any',
-                rootPath: 'app',
-                message: 'Select a target directory for your image:(add it to your README using the following syntax:![alt text](assets/images/screenshot.png))',
-                default: '',
-                suggestOnly: false,
-                depthLimit: 5
-            },
+            //{
+               // type: 'fuzzypath',
+               // name: 'path',
+               // excludePath: nodePath => nodePath.startsWith('node_modules'),
+               // excludeFilter: nodePath => nodePath == '.',
+              //  itemType: 'any',
+              //  rootPath: 'app',
+               // message: 'Select a target directory for your image:(add it to your README using the following syntax:![alt text](assets/images/screenshot.png))',
+               // default: '',
+               // suggestOnly: false,
+               // depthLimit: 5
+           // },
             {
                 type: 'input',
                 name: 'contributing',
@@ -95,6 +95,19 @@ const mainData = () => {
                         return true;
                     } else {
                         console.log('Please enter your user-name!');
+                        return false;
+                    }
+                }
+            },
+            {
+                type: 'input',
+                name: 'gitHubURL',
+                message: 'What is your GitHub URL',
+                validate: nameInput => {
+                    if (nameInput) {
+                        return true;
+                    } else {
+                        console.log('Please enter your URL for github Repo!');
                         return false;
                     }
                 }
