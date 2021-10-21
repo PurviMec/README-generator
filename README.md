@@ -18,7 +18,7 @@ There are series of questions to fill up in terminal. After successfully answere
 
 ## Usage
 After download and answering questions you can also add screenshot using this path. 
-![screen shot](./src/images/screenshot.png))
+![screen shot](./src/images/screenshot.png)
 
 ## Tests
 node index.js
