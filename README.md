@@ -20,6 +20,9 @@ There are series of questions to fill up in terminal. After successfully answere
 After download and answering questions you can also add screenshot using this path. 
 ![screen shot](./src/images/screenshot.png)
 
+## video
+![video](https://watch.screencastify.com/v/q5NRXDVqd4PLy424oIBC)
+
 ## Tests
 node index.js
 
