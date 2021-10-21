@@ -21,7 +21,7 @@ After download and answering questions you can also add screenshot using this pa
 ![screen shot](./src/images/screenshot.png)
 
 ## video
-![video](https://watch.screencastify.com/v/q5NRXDVqd4PLy424oIBC)
+[![video](https://watch.screencastify.com/v/q5NRXDVqd4PLy424oIBC)](https://watch.screencastify.com/v/q5NRXDVqd4PLy424oIBC)
 
 ## Tests
 node index.js
